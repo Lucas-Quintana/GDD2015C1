@@ -72,10 +72,10 @@
     <Compile Include="ABM Rol\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consulta Saldos\Form1.cs">
+    <Compile Include="ABM de Usuario\Consulta Saldos\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consulta Saldos\Form1.Designer.cs">
+    <Compile Include="ABM de Usuario\Consulta Saldos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Depositos\Form1.cs">
@@ -96,20 +96,62 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\ClientHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\ClientHome.Designer.cs">
+      <DependentUpon>ClientHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\MisCuentasHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\MisCuentasHome.Designer.cs">
+      <DependentUpon>MisCuentasHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\MultiRolHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\MultiRolHome.Designer.cs">
+      <DependentUpon>MultiRolHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listados\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Listados\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\Form1.cs">
+    <Compile Include="Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\ClientHome.resx">
+      <DependentUpon>ClientHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\MisCuentasHome.resx">
+      <DependentUpon>MisCuentasHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\MultiRolHome.resx">
+      <DependentUpon>MultiRolHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

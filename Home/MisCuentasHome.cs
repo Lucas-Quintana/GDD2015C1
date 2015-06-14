@@ -7,18 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PagoElectronico
+namespace PagoElectronico.Home
 {
-    public partial class Form1 : Form
+    public partial class MisCuentasHome : Form
     {
-        public Form1()
+        public MisCuentasHome()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

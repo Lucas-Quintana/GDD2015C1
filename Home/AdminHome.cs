@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PagoElectronico.Login
+namespace PagoElectronico.Home
 {
-    public partial class Form1 : Form
+    public partial class AdminHome : Form
     {
-        public Form1()
+        public AdminHome()
         {
             InitializeComponent();
         }
