@@ -1,0 +1,14 @@
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Form1.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Home.AdminHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Home.ClientHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Home.MisCuentasHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Home.MultiRolHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Login.LoginForm.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.Properties.Resources.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.csproj.GenerateResource.Cache
+C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Release\PagoElectronico.exe.config
+C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Release\PagoElectronico.exe
+C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Release\PagoElectronico.pdb
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.exe
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.pdb

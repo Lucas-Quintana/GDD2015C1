@@ -78,6 +78,7 @@
     <Compile Include="ABM de Usuario\Consulta Saldos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Query.cs" />
     <Compile Include="Depositos\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +162,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

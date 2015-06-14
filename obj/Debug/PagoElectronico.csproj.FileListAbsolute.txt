@@ -11,3 +11,17 @@ C:\Users\Lupo\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.ClientHo
 C:\Users\Lupo\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.MultiRolHome.resources
 C:\Users\Lupo\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.MisCuentasHome.resources
 C:\Users\Lupo\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.AdminHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.exe
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.pdb
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Form1.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.AdminHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.ClientHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.MisCuentasHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Home.MultiRolHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Login.LoginForm.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.Properties.Resources.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.csproj.GenerateResource.Cache
+C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.exe.config
+C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.exe
+C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.pdb
