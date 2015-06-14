@@ -77,5 +77,21 @@ namespace PagoElectronico.Login
 
         }
 
+  
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string consulta = "SELECT top 1 Clie_Doc_Nro FROM TIMEWARP.CLIENTES";
+            Query qr = new Query(consulta);
+            qr.pComando = consulta;
+            int? codigo = (int)qr.ObtenerUnicoCampo();
+            if (codigo == null)
+                label4.Text = " no anda ";
+            else
+                label4.Text = " si anda " + codigo;
+        }
+
+       
+
     }
 }
