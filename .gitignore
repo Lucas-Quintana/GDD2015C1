@@ -8,6 +8,13 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
 # Windows Installer files
 *.cab
 *.msi
@@ -16,6 +23,28 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# svn
+.svn
+ 
+# SQL Server files
+**/App_Data/*.mdf
+**/App_Data/*.ldf
+**/App_Data/*.sdf
+
+# Others
+sql/
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+modulesbin/
+tempbin/
 
 # =========================
 # Operating System Files
