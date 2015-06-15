@@ -26,7 +26,8 @@ namespace PagoElectronico.Login
                 MessageBox.Show("Los campos Username y Password son obligatorios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             } else {
                 //Get user
-                string consulta = "SELECT top 1 Usua_Codigo Usua_Password, Usua_Estado, Usua_Intentos FROM TIMEWARP.USUARIOS WHERE Usua_Username = " + usernameText;
+                string consulta = "SELECT top 1 Usua_Codigo, Usua_Password, Usua_Estado, Usua_Intentos_Fallidos FROM TIMEWARP.USUARIOS WHERE Usua_Username ='"+ username.Text + "'"  ;
+                
                 Query qr = new Query(consulta);
                 DataTable table = (DataTable)qr.ObtenerDataTable();
                 int cant = table.Rows.Count;
@@ -36,9 +37,9 @@ namespace PagoElectronico.Login
                     //Validate if enabled
                     // ((Usua_Estado < 1) | (Usua_Intentos >= 3))
                     DataRow user = table.Rows[0];
-                    int estado = (int) user["Usua_Estado"];
-                    int intentos = (int) user["Usua_Intentos"];
-                    if ((estado < 1) | (intentos >= 0))
+                    bool estado = (bool) user["Usua_Estado"] ;
+                    int intentos = (int) user["Usua_Intentos_Fallidos"];
+                    if (estado| (intentos >= 0))
                     {
                         //Validate password
                         string password_db = (string)user["Usua_Password"];
@@ -46,15 +47,21 @@ namespace PagoElectronico.Login
                         {
                             //Intento =0 UPDATE ???
                             //Validate cant de roles
-                            string codigo = (string)user["Usua_Codigo"];
-                            string consulta2 = "SELECT UxR_Rol, Rol_Descripcion FROM TIMEWARP.ROLES, TIMEWARP.ROL_USUARIOS WHERE UxR_Usuario = " + codigo + "UxR_Rol = Rol_Codigo";
-                            Query qr2 = new Query(consulta);
+                            int codigo = (int)user["Usua_Codigo"];
+                            string consulta2 = "select Rol_Descripcion from TIMEWARP.ROLES join TIMEWARP.ROL_USUARIOS on UxR_Rol=Rol_Codigo where UxR_Usuario='" + codigo+ "'";
+                           
+                           
+                            Query qr2 = new Query(consulta2);
                             DataTable tableRoles = (DataTable)qr2.ObtenerDataTable();
                             this.Visible = false;
-                            if (table.Rows.Count > 1) 
+                            if (tableRoles.Rows.Count > 1) 
                             {
                                 Home.MultiRolHome frm = new Home.MultiRolHome();
                                 frm.ShowDialog();
+                            }
+                            else if (tableRoles.Rows.Count == 0)
+                            {
+                                MessageBox.Show("no anduvo la busqueda");
                             }
                             else
                             {
@@ -106,6 +113,11 @@ namespace PagoElectronico.Login
                 label4.Text = " no anda ";
             else
                 label4.Text = " si anda " + codigo;
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
 
        

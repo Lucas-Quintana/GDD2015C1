@@ -12,3 +12,6 @@ C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Release\PagoElectronico.exe
 C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Release\PagoElectronico.pdb
 C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.exe
 C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.pdb
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.ABM_Cliente.ABMClienteHome.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.ABM_Rol.Form1.resources
+C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Release\PagoElectronico.ABM_Cliente.ABMClienteAlta.resources

@@ -92,6 +92,7 @@
             this.button3.TabIndex = 24;
             this.button3.Text = "ABM Clientes";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -110,6 +111,7 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "ABM Usuarios";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -137,6 +139,7 @@
             this.Controls.Add(this.button1);
             this.Name = "AdminHome";
             this.Text = "Pago Elecrónico - TIMEWARP";
+            this.Load += new System.EventHandler(this.AdminHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

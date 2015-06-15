@@ -15,5 +15,21 @@ namespace PagoElectronico.Home
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("No está implementada");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ABM_Cliente.ABMClienteHome frm = new ABM_Cliente.ABMClienteHome();
+            frm.ShowDialog();
+        }
+
+        private void AdminHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
