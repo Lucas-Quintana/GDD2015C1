@@ -25,3 +25,4 @@ C:\Users\ginko\Documents\GitHub\GDD2015C1\obj\Debug\PagoElectronico.csproj.Gener
 C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.exe.config
 C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.exe
 C:\Users\ginko\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.pdb
+C:\Users\Lupo\Documents\GitHub\GDD2015C1\bin\Debug\PagoElectronico.exe.config
