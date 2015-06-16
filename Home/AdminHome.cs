@@ -23,6 +23,8 @@ namespace PagoElectronico.Home
             frm.ShowDialog();
         }
 
+
+
         private void AdminHome_Load(object sender, EventArgs e)
         {
 

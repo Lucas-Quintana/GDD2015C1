@@ -190,6 +190,10 @@ namespace PagoElectronico.ABM_Cliente{
 
         private void bnLimpiar_Click(object sender, EventArgs e)
         {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            txtPregunta.Text = "";
+            txtRespuesta.Text = "";
             txtNombre.Text = "";
             txtApellido.Text = "";
             cmbTipoDoc.Text = "";
@@ -234,12 +238,7 @@ namespace PagoElectronico.ABM_Cliente{
             e.Handled = !(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
         }
 
-        private void bnVolver_Click(object sender, EventArgs e)
-        {
-           
-
-        
-        }
+   
 
   
 

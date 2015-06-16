@@ -56,7 +56,6 @@
             this.lblpiso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.DateTimePicker();
-            this.bnVolver = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.respuestaLABEL = new System.Windows.Forms.Label();
             this.PreguntaLabel = new System.Windows.Forms.Label();
@@ -324,16 +323,6 @@
             this.txtFecha.TabIndex = 37;
             this.txtFecha.Value = new System.DateTime(2014, 6, 16, 16, 49, 9, 0);
             // 
-            // bnVolver
-            // 
-            this.bnVolver.Location = new System.Drawing.Point(399, 473);
-            this.bnVolver.Name = "bnVolver";
-            this.bnVolver.Size = new System.Drawing.Size(75, 23);
-            this.bnVolver.TabIndex = 44;
-            this.bnVolver.Text = "Volver";
-            this.bnVolver.UseVisualStyleBackColor = true;
-            this.bnVolver.Click += new System.EventHandler(this.bnVolver_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.respuestaLABEL);
@@ -422,7 +411,6 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(680, 524);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.bnVolver);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bnLimpiar);
             this.Controls.Add(this.bnGuardar);
@@ -458,7 +446,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker txtFecha;
-        private System.Windows.Forms.Button bnVolver;
         private System.Windows.Forms.ComboBox cmbTipoDoc;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtMail;

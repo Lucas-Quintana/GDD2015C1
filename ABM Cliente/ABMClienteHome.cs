@@ -27,6 +27,12 @@ namespace PagoElectronico.ABM_Cliente
             frm.ShowDialog();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ABM_Cliente.ABMClienteBajaMod frm = new ABM_Cliente.ABMClienteBajaMod();
+            frm.ShowDialog();
+        }
+
      
     }
 }

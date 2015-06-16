@@ -92,7 +92,7 @@
             this.ABM_ClienteButton.TabIndex = 24;
             this.ABM_ClienteButton.Text = "ABM Clientes";
             this.ABM_ClienteButton.UseVisualStyleBackColor = true;
-            this.ABM_ClienteButton.Click += new System.EventHandler(this.button3_Click);
+            this.ABM_ClienteButton.Click += new System.EventHandler(this.ABM_ClienteButton_Click);
             // 
             // button2
             // 

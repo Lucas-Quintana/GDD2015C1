@@ -60,6 +60,18 @@
     <Compile Include="ABM Cliente\ABMClienteAlta.designer.cs">
       <DependentUpon>ABMClienteAlta.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM Cliente\ABMClienteBajaMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cliente\ABMClienteBajaMod.designer.cs">
+      <DependentUpon>ABMClienteBajaMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cliente\ABMClienteMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cliente\ABMClienteMod.designer.cs">
+      <DependentUpon>ABMClienteMod.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM Cuenta\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +158,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Cliente\ABMClienteAlta.resx">
       <DependentUpon>ABMClienteAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cliente\ABMClienteBajaMod.resx">
+      <DependentUpon>ABMClienteBajaMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cliente\ABMClienteMod.resx">
+      <DependentUpon>ABMClienteMod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
