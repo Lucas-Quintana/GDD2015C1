@@ -27,7 +27,6 @@ namespace PagoElectronico.Login
             } else {
                 //Get user
                 string consulta = "SELECT top 1 Usua_Codigo, Usua_Password, Usua_Estado, Usua_Intentos_Fallidos FROM TIMEWARP.USUARIOS WHERE Usua_Username ='"+ username.Text + "'"  ;
-                
                 Query qr = new Query(consulta);
                 DataTable table = (DataTable)qr.ObtenerDataTable();
                 int cant = table.Rows.Count;
