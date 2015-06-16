@@ -33,7 +33,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ABM_ClienteButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,15 +84,15 @@
             this.button4.Text = "ABM Rol";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // ABM_ClienteButton
             // 
-            this.button3.Location = new System.Drawing.Point(12, 183);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 26);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "ABM Clientes";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.ABM_ClienteButton.Location = new System.Drawing.Point(12, 183);
+            this.ABM_ClienteButton.Name = "ABM_ClienteButton";
+            this.ABM_ClienteButton.Size = new System.Drawing.Size(124, 26);
+            this.ABM_ClienteButton.TabIndex = 24;
+            this.ABM_ClienteButton.Text = "ABM Clientes";
+            this.ABM_ClienteButton.UseVisualStyleBackColor = true;
+            this.ABM_ClienteButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -105,13 +105,13 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(12, 146);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 30);
             this.button1.TabIndex = 22;
             this.button1.Text = "ABM Usuarios";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -134,7 +134,7 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.ABM_ClienteButton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "AdminHome";
@@ -152,7 +152,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ABM_ClienteButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;

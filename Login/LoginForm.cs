@@ -43,14 +43,16 @@ namespace PagoElectronico.Login
                     {
                         //Validate password
                         string password_db = (string)user["Usua_Password"];
+                        int codigo = (int)user["Usua_Codigo"];
                         if (password_db == passwordText)
                         {
-                            //Intento =0 UPDATE ???
+                            //Intento =0
+                            string insertIntento = "insert into TIMEWARP.INTENTOS (Inte_Usuario, Inte_Fecha, Inte_Nro) values ('" + codigo + "', GETDATE(), '0')";
+                            Query qrII = new Query(insertIntento);
+                            string updateIntento = "update TIMEWARP.USUARIOS set Usua_Intentos_Fallidos = '0' where Usua_Codigo ='" + codigo + "'";
+                            Query qrUI = new Query(updateIntento);
                             //Validate cant de roles
-                            int codigo = (int)user["Usua_Codigo"];
-                            string consulta2 = "select Rol_Descripcion from TIMEWARP.ROLES join TIMEWARP.ROL_USUARIOS on UxR_Rol=Rol_Codigo where UxR_Usuario='" + codigo+ "'";
-                           
-                           
+                            string consulta2 = "select Rol_Descripcion from TIMEWARP.ROLES join TIMEWARP.ROL_USUARIOS on UxR_Rol=Rol_Codigo where UxR_Usuario='" + codigo+ "'";                           
                             Query qr2 = new Query(consulta2);
                             DataTable tableRoles = (DataTable)qr2.ObtenerDataTable();
                             this.Visible = false;
@@ -84,6 +86,10 @@ namespace PagoElectronico.Login
                         else
                         {
                             //Intentos +1
+                            string insertIntento = "insert into TIMEWARP.INTENTOS (Inte_Usuario, Inte_Fecha, Inte_Nro) values ('" + codigo + "', GETDATE(), '" + (intentos + 1) + "')";
+                            Query qrII = new Query(insertIntento);
+                            string updateIntento = "update TIMEWARP.USUARIOS set Usua_Intentos_Fallidos = '" + (intentos + 1) + "' where Usua_Codigo ='" + codigo + "'";
+                            Query qrUI = new Query(updateIntento);
                             MessageBox.Show("Password incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
@@ -99,20 +105,6 @@ namespace PagoElectronico.Login
 
             }
 
-        }
-
-  
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string consulta = "SELECT top 1 Clie_Doc_Nro FROM TIMEWARP.CLIENTES";
-            Query qr = new Query(consulta);
-            qr.pComando = consulta;
-            int? codigo = (int)qr.ObtenerUnicoCampo();
-            if (codigo == null)
-                label4.Text = " no anda ";
-            else
-                label4.Text = " si anda " + codigo;
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
